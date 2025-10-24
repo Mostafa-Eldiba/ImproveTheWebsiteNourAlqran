@@ -198,11 +198,15 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 6rem;
-    padding-top: 15rem;
-    padding-bottom: 6rem;
-    background: url("../img/hero.webp"), center center no-repeat;
-    background-size: cover;
+  margin-bottom: 6rem;
+  padding-top: 15rem;
+  padding-bottom: 6rem;
+  position: relative;
+  background: none; /* حذف الخلفية القديمة */
+}
+
+.hero-bg-img {
+  object-fit: cover;
 }
 
 .hero-header .hero-header-inner {
@@ -558,3 +562,4 @@ h4, h5, h6, .h4, .h5, .h6 {
         left: -30px !important;
     }
 }
+
