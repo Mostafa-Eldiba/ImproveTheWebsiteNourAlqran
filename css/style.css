@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'YourFont';
+  src: url('your-font.woff2') format('woff2');
+  font-display: swap;
+}
+
 /*** Spinner Start ***/
 
 #spinner {
@@ -562,4 +568,5 @@ h4, h5, h6, .h4, .h5, .h6 {
         left: -30px !important;
     }
 }
+
 
