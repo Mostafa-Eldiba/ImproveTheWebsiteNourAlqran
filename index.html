@@ -170,21 +170,35 @@
   <!-- Topbar End -->
 
 
-  <!-- Hero Start -->
-  <div class="container-fluid hero-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="hero-header-inner animated zoomIn">
-            <p class="text-w text-dark" style="font-size: 1.25rem;">WELCOME TO Noor Al-Quran</p>
-            <h1 class="text-title display-1 mb-5 text-dark" style="font-size: 3.5rem;">Purity Lies in the Words of the Quran</h1>
-            <a href="about.html" class="btn btn-primary py-3 px-5">Read More</a>
-          </div>
+<!-- Preload للصورة -->
+<link rel="preload" as="image" href="img/hero.webp">
+
+<!-- Hero Start -->
+<div class="container-fluid hero-header position-relative overflow-hidden">
+
+  <!-- صورة الهيرو (LCP) -->
+  <img src="img/hero.jpg" 
+       alt="Quran Hero"
+       class="hero-bg-img position-absolute w-100 h-100"
+       style="object-fit: cover; top: 0; left: 0; z-index: -1;"
+       loading="eager">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="hero-header-inner animated zoomIn">
+          <p class="text-w text-dark" style="font-size: 1.25rem;">WELCOME TO Noor Al-Quran</p>
+          <h1 class="text-title display-1 mb-5 text-dark" style="font-size: 3.5rem;">
+            Purity Lies in the Words of the Quran
+          </h1>
+          <a href="about.html" class="btn btn-primary py-3 px-5">Read More</a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Hero End -->
+</div>
+<!-- Hero End -->
+
 
 
     <!-- Start Whatsapp -->
@@ -1164,3 +1178,4 @@
 </body>
 
 </html>
+
