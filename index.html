@@ -176,18 +176,19 @@
   <!-- Topbar End -->
 
 
-<!-- Preload للصورة -->
-<link rel="preload" as="image" href="img/hero.webp">
-
 <!-- Hero Start -->
+<!-- Preload للصورة -->
+<link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
+
 <div class="container-fluid hero-header position-relative overflow-hidden">
 
-  <!-- صورة الهيرو (LCP) -->
   <img src="img/hero.webp" 
        alt="Quran Hero"
        class="hero-bg-img position-absolute w-100 h-100"
        style="object-fit: cover; top: 0; left: 0; z-index: -1;"
-       loading="eager">
+       width="1920" height="1080"
+       loading="eager"
+       fetchpriority="high">
 
   <div class="container">
     <div class="row">
@@ -203,6 +204,7 @@
     </div>
   </div>
 </div>
+
 <!-- Hero End -->
 
 
@@ -1185,6 +1187,7 @@
 </body>
 
 </html>
+
 
 
 
