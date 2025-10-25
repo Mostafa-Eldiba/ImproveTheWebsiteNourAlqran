@@ -211,7 +211,13 @@ h4, h5, h6, .h4, .h5, .h6 {
   position: relative;
   background: none; /* حذف الخلفية القديمة */
 }
-
+.hero-header {
+    margin-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background: url(../img/hero.webp), center center no-repeat;
+    background-size: cover;
+}
 .hero-bg-img {
   object-fit: cover;
 }
@@ -569,6 +575,7 @@ h4, h5, h6, .h4, .h5, .h6 {
         left: -30px !important;
     }
 }
+
 
 
 
