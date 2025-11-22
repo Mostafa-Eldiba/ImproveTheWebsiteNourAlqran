@@ -31,8 +31,8 @@
     right: 30px;
     bottom: 30px;
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
@@ -240,7 +240,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 /*** Hero Header ***/
 
 /* Start Whatsapp */
-.join-chat {
+/* .join-chat {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -265,8 +265,53 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .join-chat:hover .join-chat-button {
     color: white;
+} */
+html[dir=ltr] .fixed-icons {
+  right: 10px;
+  left: unset;
 }
-
+.fixed-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 25px;
+}
+.fixed-icons .fixed-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: pulse-shadow 4s linear infinite alternate;
+}
+.fixed-icons .fixed-icon.primary-color {
+  background-color: #25d366;
+}
+/* .fixed-icons .fixed-icon.secondary-color {
+  background-color: #2f4147;
+} */
+.fixed-icons .fixed-icon img {
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fixed-icons .fixed-icon:hover img {
+  animation: fadeInLeft 0.4s linear;
+}
 /* End Whatsapp */
 
 
@@ -597,6 +642,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     max-height: 60px;
   }
 }
+
 
 
 
